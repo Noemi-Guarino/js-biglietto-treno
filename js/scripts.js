@@ -9,7 +9,7 @@ const distance = prompt('Inserisci il numero di kilometri che vuoi percorrere');
 const age = prompt('Inserisci la tua età');
 const tax = 0.21
 
-let totalPrice = (distance * tax );
+let totalPrice = (distance * tax);
 let discount = 0;
 
 if ( age < 18 ) {
@@ -23,6 +23,7 @@ else if ( age >= 65 ) {
 }
 
 const price = (totalPrice - discount);
+console.log(price.toFixed(2))
 
 document.getElementById("trainticket").innerHTML =
 price;
