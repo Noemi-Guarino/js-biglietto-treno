@@ -22,11 +22,11 @@ else if ( age >= 65 ) {
     console.log("sconto",discount, typeof discount);
 }
 
-const price = (totalPrice - discount);
-console.log(price.toFixed(2))
+let price = (totalPrice - discount);
+const finalPrice = (price.toFixed(2))
 
 document.getElementById("trainticket").innerHTML =
-price;
+finalPrice;
 
 
 
